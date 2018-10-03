@@ -1,0 +1,11 @@
+<p>
+    <button (click)="getWeather()"> Get Weather </button>
+</p>
+<div *ngFor="let forecast of weatherForecasts">
+    <div>
+      <span>Date : </span>
+      {{forecast.datetime}}
+      <span>Max_Temp : </span>
+      {{forecast.max_temp}}
+    </div>
+  </div> 
